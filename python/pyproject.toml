@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "blupinta"
+version = "0.0.1"
+description = "Official SDK for Blupinta's public API — coming soon"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "Blupinta" }]
+keywords = ["blupinta", "floor plan", "home", "sdk", "api"]
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://blupinta.app"
+Documentation = "https://docs.blupinta.app/reference/public-api/"
+Source = "https://github.com/blupinta/blupinta"
+Issues = "https://github.com/blupinta/blupinta/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/blupinta"]
