@@ -1,27 +1,28 @@
-# Blupinta SDKs
+# Blupinta's public libraries
 
 Official libraries for [Blupinta](https://blupinta.app)'s public API, `https://api.blupinta.app/v1`: read a home's
-saved versions, its files and its furniture, follow new versions as they are saved, and sign people in at
-`auth.blupinta.app` (OAuth 2.1 and OpenID Connect, the device flow for screens without a keyboard).
+saved versions, its files and its furniture, follow new versions as they are saved, save a version from outside, and
+sign people in at `auth.blupinta.app` (OAuth 2.1 and OpenID Connect, the device flow for screens without a keyboard).
+Each language has its own repository.
 
-**Status: nothing is published yet.** The packages below are planned; this repository will hold their sources as they
-are released.
-
-| Package | Registry | For |
+| Repository | Packages | For |
 |---|---|---|
-| `@blupinta/home` | npm | the home format: types, parser, migrations, JSON Schema |
-| `@blupinta/sdk` | npm | TypeScript, in the browser and in Node |
-| `@blupinta/react` | npm | React hooks and provider |
-| `@blupinta/cli` | npm | the `blupinta` command line |
-| `@blupinta/mcp` | npm | an MCP server for AI agents |
-| `blupinta` | PyPI | Python, sync and async |
+| [blupinta-js](https://github.com/blupinta/blupinta-js) | `@blupinta/sdk`, `@blupinta/react`, `@blupinta/home`, `@blupinta/cli`, `@blupinta/mcp` on npm | TypeScript in the browser and in Node, React, the home format's types, the `blupinta` command line, an MCP server for AI agents |
+| [blupinta-python](https://github.com/blupinta/blupinta-python) | `blupinta` on PyPI | Python, sync and async |
 
-Swift, Kotlin and C# clients will follow, generated from the API's OpenAPI document.
+Swift, Kotlin, C# and PHP will follow, each in its own repository, generated from the API's OpenAPI document.
+
+**Status: nothing is released yet but the name on PyPI.** The libraries are about to have their first releases.
 
 ## Documentation
 
-The public API is described at `GET https://api.blupinta.app/v1` and explained in the guide:
-<https://docs.blupinta.app/reference/public-api/>.
+The public API is described at `GET https://api.blupinta.app/v1` and explained in the guide, with each library's first
+lines: <https://docs.blupinta.app/reference/libraries/>.
+
+## Reporting a problem
+
+A problem with a library: an issue in its repository. A security problem: see [SECURITY.md](SECURITY.md), never a
+public issue.
 
 ## Licence
 
